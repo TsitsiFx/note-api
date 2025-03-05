@@ -1,0 +1,23 @@
+import mongoose, { Schema } from "mongoose";
+
+const noteSchema = new Schema({
+  title:{
+    type: String,
+    lowercase: true
+
+
+  },
+
+  body: {
+    type: String
+  },
+
+  date: {
+    type: Date,
+    default: Date.now()
+  }
+
+}, 
+{timestamp: true})
+
+export const Note = mongoose.model('note', noteSchema)

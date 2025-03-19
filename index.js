@@ -1,25 +1,8 @@
-// import express from 'express'
-
-// app.get('/home', (req, res) => {
-//   res.send('Hello, yeah welcome')
-// })
-
-// app.get('/notes', (req, res) => {
-//   res.send('This is my second endpoint')
-// })
-
-// app.listen(port, () => {
-//   console.log(`Server is listening on port ${port}`)
-// })
 
 import express from "express";
 import notesRouter from "./routes/note_route.js";
 import "dotenv/config";
 import mongoose from "mongoose";
-import bcrypt from "bcrypt";
-
-// Make database connection
-// iNwFyr0vf8vZW7Az
 
 const connectString = process.env.MONGO_URL;
 

@@ -16,6 +16,7 @@ import express from "express";
 import notesRouter from "./routes/note_route.js";
 import "dotenv/config";
 import mongoose from "mongoose";
+import bcrypt from "bcrypt";
 
 // Make database connection
 // iNwFyr0vf8vZW7Az
